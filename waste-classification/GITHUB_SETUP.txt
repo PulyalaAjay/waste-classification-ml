@@ -1,0 +1,42 @@
+# GitHub Setup Instructions
+# Run these commands in your terminal to push to GitHub
+
+# ── Step 1: Create repo on GitHub ────────────────────────────────────────────
+# Go to https://github.com/new
+# Name: waste-classification
+# Description: AI-powered waste classification — SVM → EfficientNet → TFLite Android
+# Visibility: Public
+# Do NOT initialize with README (you already have one)
+# Click "Create repository"
+
+# ── Step 2: Init and push from your local machine ────────────────────────────
+
+cd waste-classification
+
+git init
+git add .
+git commit -m "Initial commit: All 4 phases — EfficientNet, TFLite, Active Learning, Drift Monitoring"
+
+# Replace YOUR_USERNAME with your actual GitHub username
+git remote add origin https://github.com/ajaytrpx/waste-classification.git
+git branch -M main
+git push -u origin main
+
+# ── Step 3: Add GitHub topics (do this on the GitHub website) ────────────────
+# Go to your repo → click the ⚙️ gear icon next to "About"
+# Add topics: machine-learning, tensorflow, waste-classification, android, tflite,
+#             streamlit, efficientnet, active-learning, python, sustainability
+
+# ── Step 4: Pin the repo on your profile ─────────────────────────────────────
+# Go to github.com/ajaytrpx
+# Click "Customize your profile" → "Pin repositories"
+# Select waste-classification
+
+# ── Step 5: Update your profile README (optional but recommended) ─────────────
+# Create repo: github.com/ajaytrpx/ajaytrpx (same name as username)
+# Add a README.md with your skills, projects, and a link to WasteWise
+
+# ── LinkedIn Post ─────────────────────────────────────────────────────────────
+# Copy the text from LINKEDIN_POST.txt
+# Go to linkedin.com → Start a post → paste → Post
+# Best posting time: Tuesday–Thursday, 8–10 AM IST

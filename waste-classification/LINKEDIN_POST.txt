@@ -1,0 +1,41 @@
+🗑️ From prototype to production — here's how I'm scaling my waste classification AI project.
+
+India generates 62 million tonnes of waste every year. Only 20% gets processed. The problem starts at the bin — when people can't tell if something is recyclable, compostable, or hazardous.
+
+I built WasteWise to solve that.
+
+Here's the full roadmap I'm executing as a final-year B.Tech (AI/ML) student:
+
+✅ Phase 1 — DEPLOYED
+SVM + Random Forest classifier via Streamlit
+• Binary: Organic vs Recyclable
+• Image quality pre-checks (brightness, blur) before any ML runs
+• Model caching, real-time user feedback on photo quality
+
+🔄 Phase 2 — IN PROGRESS
+EfficientNet-B0 CNN → 10 waste categories
+• Cardboard, e-waste, food waste, glass, hazardous, metal, paper, plastic, rubber, textile
+• 2-stage fine-tuning on ImageNet pretrained weights
+• Grad-CAM heatmaps: see exactly what the model is looking at
+• Target: >90% accuracy
+
+🔜 Phase 3 — PLANNED
+TFLite Android App — works offline, zero internet needed
+• INT8 quantization → 4 MB model
+• Real-time camera inference via CameraX (<150ms)
+• Built on my existing Kotlin + ARCore experience from my AR interior design project
+
+🔮 Phase 4 — FUTURE
+Active Learning + Drift Monitoring
+• Auto-detect when production data shifts away from training distribution
+• Uncertainty sampling: surface the images the model is least sure about for human review
+• GitHub Actions: weekly automated retrain → TFLite → deploy
+
+All code is open source 👇
+🔗 github.com/ajaytrpx/waste-classification
+
+The thing that excites me most: this isn't just a class project. It runs on real devices, in real conditions, in Indian waste contexts that western datasets miss entirely.
+
+If you're working on ML for sustainability, environmental tech, or just want to collaborate on adding more Indian waste categories to the dataset — let's connect.
+
+#MachineLearning #TensorFlow #ComputerVision #Android #TFLite #Python #AIforGood #WasteManagement #Sustainability #OpenSource #MLOps #EfficientNet #Streamlit
